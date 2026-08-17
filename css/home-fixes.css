@@ -1,8 +1,16 @@
 /* home-fixes.css — homepage layout overrides (mobile) */
 
 /* ---- animated energy field for the credits section ---- */
+.mui-1l53qua {
+  position: relative !important;
+}
 .mui-1228fqr {
-  position: relative;
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  z-index: 0;
   overflow: hidden;
   background-image:
     linear-gradient(to top, rgb(0, 0, 0) 52%, rgba(0, 0, 0, 0.92) 78%, rgba(0, 0, 0, 0)),
@@ -12,6 +20,17 @@
     radial-gradient(circle at 10% 80%, rgba(255, 120, 60, 0.12), transparent 40%);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   animation: sg-drift 20s ease-in-out infinite alternate;
+}
+.mui-3gj1d7,
+.mui-19woake,
+.mui-tg3xso {
+  position: relative !important;
+  z-index: 1;
+}
+@media (min-width: 900px) {
+  .mui-1l53qua {
+    min-height: 1100px !important;
+  }
 }
 @keyframes sg-drift {
   0%   { background-position: 0 0, 0% 0%, 100% 100%, 50% 50%, 100% 0%; }
