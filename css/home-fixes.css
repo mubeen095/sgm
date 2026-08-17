@@ -3,6 +3,10 @@
 /* ---- animated energy field for the credits section ---- */
 .mui-1l53qua {
   position: relative !important;
+  background-image: url("/_next_public/media/homepage_feb_26/leaf-forest-background-wide-optimized.avif") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 .mui-1228fqr {
   position: absolute !important;
@@ -31,6 +35,11 @@
   z-index: 1;
 }
 @media (max-width: 899px) {
+  .mui-1l53qua {
+    background-image: url("/_next_public/media/homepage_feb_26/leaf-forest-background-portrait-optimized.avif") !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
   .mui-1228fqr {
     display: none !important;
   }
