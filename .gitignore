@@ -1,0 +1,6 @@
+# Next.js image optimization cache (unused - images load from public-cdn directly)
+_next/image?url=*
+# Backups
+*.bak
+# OS
+.DS_Store
