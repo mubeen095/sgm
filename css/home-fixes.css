@@ -17,8 +17,10 @@
     radial-gradient(circle at 25% 35%, rgba(48, 150, 255, 0.3), transparent 46%),
     radial-gradient(circle at 78% 55%, rgba(157, 78, 221, 0.26), transparent 42%),
     radial-gradient(circle at 50% 92%, rgba(0, 100, 255, 0.24), transparent 46%),
-    radial-gradient(circle at 10% 80%, rgba(255, 120, 60, 0.12), transparent 40%);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    radial-gradient(circle at 10% 80%, rgba(255, 120, 60, 0.12), transparent 40%),
+    radial-gradient(circle at 50% 20%, rgba(0, 180, 255, 0.18), transparent 55%),
+    linear-gradient(115deg, transparent 38%, rgba(110, 170, 255, 0.14) 50%, transparent 62%);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   animation: sg-drift 20s ease-in-out infinite alternate;
 }
 .mui-3gj1d7,
@@ -33,15 +35,15 @@
   }
 }
 @keyframes sg-drift {
-  0%   { background-position: 0 0, 0% 0%, 100% 100%, 50% 50%, 100% 0%; }
-  50%  { background-position: 0 0, 60% 40%, 40% 20%, 80% 60%, 20% 80%; }
-  100% { background-position: 0 0, 100% 60%, 0% 40%, 20% 10%, 60% 100%; }
+  0%   { background-position: 0 0, 0% 0%, 100% 100%, 50% 50%, 100% 0%, 50% 20%, 115% 0; }
+  50%  { background-position: 0 0, 60% 40%, 40% 20%, 80% 60%, 20% 80%, 30% 45%, 50% 100%; }
+  100% { background-position: 0 0, 100% 60%, 0% 40%, 20% 10%, 60% 100%, 80% 30%, -15% 60%; }
 }
 .mui-1228fqr::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, transparent 30%, rgba(120, 180, 255, 0.22) 45%, rgba(157, 78, 221, 0.16) 55%, transparent 72%);
+  background: linear-gradient(115deg, transparent 30%, rgba(120, 180, 255, 0.28) 45%, rgba(157, 78, 221, 0.22) 55%, transparent 72%);
   background-size: 250% 100%;
   background-repeat: no-repeat;
   animation: sg-sweep 9s linear infinite;
