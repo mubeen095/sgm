@@ -1753,3 +1753,17 @@ a.chip:hover {
   line-height: 1.6;
   color: #8fc2ff;
 }
+
+/* ------------------------------------------------------------ sub-text polish
+   schedule times + eyebrow labels: no blue, slightly bigger */
+.day-cell .dc-txt small {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+.eyebrow {
+  color: rgba(255, 255, 255, 0.74) !important;
+}
+.eyebrow[style*="gold"] {
+  color: var(--gold) !important;
+}
