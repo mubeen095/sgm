@@ -189,6 +189,23 @@
     }));
   }
 
+  /* ---- mobile hamburger menu ---- */
+  function initMobileMenu() {
+    var btn = document.querySelector('.app-menu');
+    var nav = document.querySelector('.app-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.classList.contains('open')) return;
+      if (nav.contains(e.target) || btn.contains(e.target)) return;
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initAppbar();
     initReveal();
@@ -198,6 +215,7 @@
     initTimeline();
     initSportSelector();
     initYear();
+    initMobileMenu();
     runQA();
   });
 })(window, document);

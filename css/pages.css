@@ -961,10 +961,54 @@ body.appbar-in .appbar { opacity: 1; transform: translateY(0); }
 }
 .banner-err.show { display: block; }
 
-/* ------------------------------------------------------------ responsive */
+/* ------------------------------------------------------------ mobile menu */
+.app-menu {
+  display: none;
+}
 @media (max-width: 899px) {
-  .app-nav a { display: none; }
-  .app-nav .btn { display: inline-flex; }
+  .app-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-left: 0;
+    padding: 8px 0 12px;
+    background: #0a0a0a;
+    border-bottom: 1px solid #1f1f1f;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  }
+  .app-nav.open {
+    display: flex;
+  }
+  .app-nav a {
+    display: block;
+    padding: 13px 22px;
+    border-radius: 0;
+  }
+  .app-nav .btn {
+    margin: 14px 22px 4px;
+  }
+  .app-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    flex: none;
+  }
+  .app-menu:hover { background: rgba(255, 255, 255, 0.08); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
