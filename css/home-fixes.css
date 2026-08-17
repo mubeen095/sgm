@@ -1,0 +1,16 @@
+/* home-fixes.css — homepage layout overrides (mobile) */
+
+@media (max-width: 899px) {
+  .mui-14kfhns > .mui-p06td1,
+  .mui-14kfhns > .mui-o51yez {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 10px;
+    margin-top: 12px !important;
+  }
+  .mui-14kfhns .mui-11gt0yk {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 14px 16px 14px !important;
+  }
+}
